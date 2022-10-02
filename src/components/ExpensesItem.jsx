@@ -1,13 +1,16 @@
 import React from 'react';
 import './ExpensesItem.css';
 const ExpensesItem = () => {
+	const expenseDate = new Date(2021, 2, 17);
+	const expenseTitle = 'car insurance ';
+	const expenseAmount = 254;
 	return (
 		<>
 			<div className='expense-item'>
-				<div>March 28th 2021</div>
+				<div>{expenseDate.toString()}</div>
 				<div className='expense-item__description'>
-					<h2> car insurance</h2>
-					<div className='expense-item__price '> 251$</div>
+					<h2> {expenseTitle}</h2>
+					<div className='expense-item__price '> {expenseAmount}</div>
 				</div>
 			</div>
 		</>
