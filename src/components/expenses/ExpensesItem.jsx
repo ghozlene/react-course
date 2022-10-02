@@ -9,7 +9,7 @@ const ExpensesItem = ({ expenses }) => {
 		setTitle('updated');
 	};
 	return (
-		<>
+		<li>
 			<Card className='expense-item'>
 				<ExpenseDate expenses={expenses} />
 				<div className='expense-item__description'>
@@ -18,7 +18,7 @@ const ExpensesItem = ({ expenses }) => {
 				</div>
 				<button onClick={changetitle}>Click me</button>
 			</Card>
-		</>
+		</li>
 	);
 };
 export default ExpensesItem;
