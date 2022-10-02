@@ -2,7 +2,10 @@ import React from 'react';
 import './Expenses.css';
 import ExpensesItem from './ExpensesItem';
 import Card from '../ui/Card';
-const Expenses = ({ expenses }) => {
+const Expenses = ({ expenses, data }) => {
+	if (data !== {}) {
+		console.log(data);
+	}
 	return (
 		<Card className='expenses'>
 			<ExpensesItem expenses={expenses[0]} />
