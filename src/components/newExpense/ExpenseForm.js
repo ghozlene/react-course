@@ -11,15 +11,31 @@ const ExpenseForm = () => {
 		entredDate: '',
 	});
 	const titleChangeHandler = (event) => {
-		setUserInput({ ...userInput, entredTitle: event.target.value });
+		setUserInput((prevValue) => {
+			return {
+				...prevValue,
+				entredTitle: event.target.value,
+			};
+		});
 	};
 	const amountChangeHandler = (event) => {
-		setUserInput({ ...userInput, entredAmount: event.target.value });
+		setUserInput((prevValue) => {
+			return {
+				...prevValue,
+				entredAmount: event.target.value,
+			};
+		});
 	};
 
 	const dateChangeHandler = (event) => {
-		setUserInput({ ...userInput, entredDate: event.target.value });
+		setUserInput((prevValue) => {
+			return {
+				...prevValue,
+				entredDate: event.target.value,
+			};
+		});
 	};
+
 	return (
 		<form>
 			<div className='new-expense__controls'>
