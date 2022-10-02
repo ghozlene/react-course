@@ -10,7 +10,7 @@ const Chart = ({ dataPointS }) => {
 					key={dataPoint.id}
 					value={dataPoint.value}
 					maxValue={null}
-					labe={dataPoint.label}
+					label={dataPoint.label}
 				/>
 			))}
 		</div>
