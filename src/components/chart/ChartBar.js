@@ -1,6 +1,6 @@
 import React from 'react';
 import './ChartBar.css';
-const ChartBar = ({ key, value, maxValue, label }) => {
+const ChartBar = ({ value, maxValue, label }) => {
 	let barFillHeight = '0%';
 
 	if (maxValue > 0) {
@@ -12,8 +12,8 @@ const ChartBar = ({ key, value, maxValue, label }) => {
 				<div
 					className='chart-bar__fill'
 					style={{ height: barFillHeight }}></div>
-				<div className='chart-bar__label'>{label}</div>
 			</div>
+			<div className='chart-bar__label'>{label}</div>
 		</div>
 	);
 };
